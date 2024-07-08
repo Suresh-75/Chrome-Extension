@@ -1,0 +1,16 @@
+{
+  "manifest_version": 3,
+  "name": "Productivity Tracker",
+  "description": "Helps track and maintain your Productivity",
+  "version": "1.0",
+  "action": {
+    "default_popup": "../index.html",
+    "default_icon": "tree-1578.png"
+  },
+  "background": {
+    "service_worker": "assets/background.js",
+    "type": "module"
+  },
+  "host_permissions": ["http://*/*", "https://*/*"],
+  "permissions": ["storage", "tabs", "scripting"]
+}
